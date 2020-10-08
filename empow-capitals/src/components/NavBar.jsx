@@ -1,11 +1,13 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import empow from '../logos/Empow-01.jpeg'
 
 export default function navBar(){
     return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light" text="dark" style={{lineHeight:"50px"}} >
-  <Navbar.Brand href="#home">Empow Capitals</Navbar.Brand>
+  <Navbar.Brand href="#home">
+    <img src={empow} alt="logoempow" height="130px" width="200px" />
+    </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse className="justify-content-center" id="responsive-navbar-nav">
    
@@ -23,32 +25,7 @@ export default function navBar(){
       <Nav.Link eventKey={2} href="#memes"> CONTACTO </Nav.Link> 
      
     </Nav>
-    </Navbar.Collapse>
-    <Nav>
-        <FontAwesomeIcon
-            icon={['fab', 'facebook']}
-            className='h2 mr-4'
-            style={{ color: 'blue' }}
-          />
-       
-       <FontAwesomeIcon
-            icon={['fab', 'whatsapp']}
-            className='h2 mr-4'
-            style={{ color: 'green' }}
-          />
-          <FontAwesomeIcon
-            icon={['fab', 'twitter']}
-            className='h2 mr-4'
-            style={{ color: 'DodgerBlue' }}
-          />
-          <FontAwesomeIcon
-            icon={['fab', 'instagram']}
-            className='h2'
-            style={{ color: 'pink' }}
-          />
-       
-    </Nav>
- 
+    </Navbar.Collapse> 
 </Navbar>
         
     )
