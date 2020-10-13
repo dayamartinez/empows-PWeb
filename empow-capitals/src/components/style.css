@@ -1,0 +1,10 @@
+
+.section {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px;
+    margin: 40px;
+}
