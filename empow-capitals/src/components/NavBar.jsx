@@ -4,9 +4,9 @@ import empow from '../logos/Empow-01.jpeg'
 
 export default function navBar(){
     return (
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" text="dark" style={{lineHeight:"50px"}} >
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" text="dark" style={{lineHeight:"50px"}}>
           <Navbar.Brand href="#home">
-            <img src={empow} alt="logoempow" height="130px" width="200px" />
+            <img src={empow} alt="logoempow" height="120px" width="190px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
@@ -15,11 +15,12 @@ export default function navBar(){
               <NavDropdown title="SEÑALES" id="collasible-nav-dropdown">          
                 <NavDropdown.Item href="https://chat.whatsapp.com/KFGlQDJjW4DE2sjW5JrCt8"> SEÑALES GRATIS</NavDropdown.Item>
                   <NavDropdown.Divider /> 
-                <NavDropdown.Item href="#señales-premium">SEÑALES PREMIUM</NavDropdown.Item>
+                <NavDropdown.Item href="#premium">SEÑALES PREMIUM</NavDropdown.Item>
               </NavDropdown>  
               <Nav.Link href="#gestion-de-capital">GESTIÓN DE CAPITAL</Nav.Link>
-              <NavDropdown title="CURSOS" href="#cursos" id="collasible-nav-dropdown">          
-                <NavDropdown.Item href="#analisis-tecnico"> ANÁLISIS TÉCNICO</NavDropdown.Item>
+              <Nav.Link href="#analisis-tecnico"> ANÁLISIS TÉCNICO</Nav.Link>
+              <NavDropdown title="CURSOS" id="collasible-nav-dropdown">          
+                
                 <NavDropdown.Item href="#ondas-de-elliott">ONDAS DE ELLIOTT</NavDropdown.Item>
                 <NavDropdown.Item href="#patrones-armonicos">PATRONES ARMÓNICOS</NavDropdown.Item>
               </NavDropdown>

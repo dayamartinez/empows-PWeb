@@ -1,10 +1,72 @@
 
-.section {
+.señal {
     display: block;
     position: relative;
     z-index: 1;
     width: 100%;
     overflow: hidden;
     padding: 50px;
-    margin: 40px;
+    
+}
+.section {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;    
+}
+
+.video {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5vw;
+}
+
+.bgvideo {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 44vw;
+    background: #fff;    
+}
+.slide {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 44vw;
+    background: #fff;
+}
+
+.bcg {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-image: url(https://image.freepik.com/vector-gratis/grafico-mercado-valores-o-grafico-comercio-divisas-empresas_87788-126.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw;
+    background-position: center;
+    background-attachment: fixed;
+}
+.datos {
+    display: block;
+    position: absolute;
+    top: 4vw;
+    width: 100%;
+    padding: 4vw 6vw;
+    background-color: rgba(255,255,255,.5);
+}
+
+.cardpaq{
+    color: rgba(73, 5, 27, 0.829)
 }
