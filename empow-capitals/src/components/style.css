@@ -1,40 +1,30 @@
-
-.señal {
-    display: block;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-    padding: 50px;
-    
-}
 .section {
     display: block;
     position: relative;
     z-index: 1;
     width: 100%;
     overflow: hidden;
-    padding: 40px;    
+    margin-bottom: 5vw;
+       
 }
-
+/* video youtube */
 .video {
     display: block;
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 30vw;
+    height: 20vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 5vw;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
 }
-
 .bgvideo {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 70%;
-    height: 44vw;
+    width: 35%;
     background: #fff;    
 }
 .slide {
@@ -43,15 +33,16 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 44vw;
+    height: 30vw;
     background: #fff;
 }
+/* ------- */
 
 .bcg {
     position: relative;
     display: block;
     width: 100%;
-    background-image: url(https://image.freepik.com/vector-gratis/grafico-mercado-valores-o-grafico-comercio-divisas-empresas_87788-126.jpg);
+    background-image: url('../logos/gestioncapital.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vw;
@@ -63,10 +54,67 @@
     position: absolute;
     top: 4vw;
     width: 100%;
-    padding: 4vw 6vw;
-    background-color: rgba(255,255,255,.5);
+    padding: 3vw 4vw;
+    background-color: rgba(221, 208, 208, 0.733) ;
+}
+/* CARD PAQUETES */
+.cardpaq{
+    color: rgba(139, 16, 16, 0.829)
 }
 
-.cardpaq{
-    color: rgba(73, 5, 27, 0.829)
+.señal {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px;     
+}
+/* .trans {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 2vw;
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    opacity: 0;
+    transition: .5s .5s;
+} */
+/* navbar */
+.nav {
+    display: inline;
+    position: fixed;  
+    z-index: 100;
+    background-color: white; 
+    width: 100%; 
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .cardspaq{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+
+  .fondomentoria {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-image: url('../logos/mentorias.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vw;
+    background-position: center;
+    background-attachment: fixed;
+}
+.datosmentoria {
+    display: block;
+    position: absolute;
+    top: 5vw;
+    width: 100%;
+    padding: 1vw 4vw;
+    background-color: rgba(221, 208, 208, 0.733);
+    
 }

@@ -12,7 +12,7 @@ library.add(fab, faCheckSquare, faCoffee, fas)
 
 function App() {
   return (
-    <div>
+    <div className='App h-100'>
       <NavBar />
       <Content />
       <Footer />

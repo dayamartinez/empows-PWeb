@@ -1,12 +1,12 @@
 import React from 'react'
-import { Card, Button, Row, Col, Container} from 'react-bootstrap'
+import { Card, Button, Container} from 'react-bootstrap'
 import Video from './video'
 import Widget from './Widget'
 import './style.css'
 
 export default function content(){
-    const colorBut = { backgroundColor: 'rgba(163, 24, 0, 0.829)' }
-    const cards = {width: '18rem', height: '20rem' , marginRight:'15px'}
+    // const colorBut = { backgroundColor: 'rgba(163, 24, 0, 0.829)' }
+    const cards = {width: '18rem', height: '17rem' , marginRight:'15px'}
     const conteiner = { display:'flex', flexDirection: 'row', margin: '20px'}
 
     let pack = [
@@ -18,29 +18,30 @@ export default function content(){
 
     return (
         <div >
-            <Widget/>
-            <Video/>            
+            
+            <Video/> 
+                       
             <section id='premium' className='señal' >
                 <h3>Señales Premium</h3><hr/>
-                <Container style={conteiner}>                    
+                <div  style={conteiner}>                    
                     { pack && pack.map(p => (
-                          <Row >
-                          <Col xs={12} md={8}> 
-                          <Card className='card text-center' bg="light" style={cards} >
+                           <div className='trans'>
+                          <Card key={p.name} className='card text-center' bg="light" style={cards} >
                             <Card.Header> <h4 className='cardpaq'>{p.name} </h4> </Card.Header>
                             <Card.Body>                        
                                 <Card.Text><p> 3-5 señales por día <br/>
                                      Acceso instantaneo al servicio premium</p>                                
                                     <h5 className='cardpaq'> {p.price}</h5>                                
                                 </Card.Text>
-                                <Button style={colorBut} size="sm" block>Solicitar Compra</Button>
+                                <Button variant='danger'size="sm" block>Solicitar Compra</Button>
                             </Card.Body>
                         </Card>
-                        </Col>  
-                        </Row>
+                       </div>
                     ))}
-                </Container>    
+                </div>    
             </section>
+            
+            <Widget/>
 
             <section id='gestion-de-capital' className='section'>
                 <div className='bcg' >
@@ -54,7 +55,7 @@ export default function content(){
                         <li>Rentabilidad hasta 10% anual</li>
                     </Card.Text>                    
                 </Card.Body>
-                <Button style={colorBut} size="sm">Consultar</Button>
+                <Button variant='danger' size="sm">Consultar</Button>
                 </div>
                 </div>
             </section>
@@ -77,7 +78,7 @@ export default function content(){
                             <li>Clases en vivo + Canal Premium.</li>                     
                         </Card.Text>
                         <h5> U$S 129,00</h5>
-                        <Button style={colorBut} size="sm">Solicitar Compra</Button>
+                        <Button variant='danger' size="sm">Solicitar Compra</Button>
                         </Card.Body> 
                     </div>           
                 </section>
@@ -100,7 +101,7 @@ export default function content(){
                             <li>Mentoria 1-1 para pulir errores.</li>
                         </Card.Text>
                         <h5> U$S 129,00</h5>  
-                        <Button style={colorBut} size="sm">Solicitar Compra</Button>
+                        <Button variant='danger' size="sm">Solicitar Compra</Button>
                         </Card.Body>
                     </div>           
                 </section>
@@ -121,18 +122,17 @@ export default function content(){
                             <li>Creación y Seguimiento de cuenta Auditada.</li>                
                         </Card.Text>
                         <h5 > U$S 129,00</h5>   
-                        <Button style={colorBut} size="sm">Solicitar Compra</Button>
+                        <Button variant='danger' size="sm">Solicitar Compra</Button>
                     </Card.Body> 
                     </div>           
                 </section>
                 
           
-
-
             <section id='mentoria' className='section'>
-                <div >
-                <h4>Mentoria 1-1</h4><hr/>
-                    <Card.Body>
+                <div className='fondomentoria' >
+                    <div className='datosmentoria'>
+                    <Card.Body >
+                    <h4>Mentoria 1-1</h4><hr/>
                     <p> Las mentorías 1-1 están enfocadas a un trabajo y seguimiento personalizado a partir 
                     de la base y operativa que tenga el trader.
                     <br/>Trabajamos en tiempo real con el mercado durante 1 hora y media por día, 3 días a la semana con el objetivo de identificar 
@@ -143,15 +143,15 @@ export default function content(){
                         trader se sienta seguro a la hora de realizar sus operativas.
                     </p>   
                     <Card.Text>
-                    <li>Mentoría para cualquier mercado que opere el trader</li>
-                    <li>Duración: 1 mes</li>
-                    <li>Acceso al canal de señales premium</li>
+                        <li>Mentoría para cualquier mercado que opere el trader</li>
+                        <li>Duración: 1 mes</li>
+                        <li>Acceso al canal de señales premium</li>
                     </Card.Text>
-                    <Button style={colorBut} size="sm" >Solicitar</Button>
+                    <Button variant='danger' size="sm" >Solicitar</Button>
                 </Card.Body>
-                </div>           
-            </section>
-
+                </div>
+                </div>         
+            </section>                        
         </div>
     )
 } 

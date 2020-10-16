@@ -3,31 +3,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer(){
   return (
-    <footer className='row p-4 bg-light mx-0 table-responsive' style={{position: 'fixed', bottom: 0 }} >
+    <footer id='social' className='row p-5  mx-0 table-responsive' 
+    style={{position: 'relative', bottom: 0 }} >
         <div className='text-light text-center' >
-          {/* <h5 className='text-uppercase font-weight-light text-light mb-3'>
-          </h5>      */}
+          <h5 className='text-uppercase font-weight-dark text-dark mb-3'>
+            Nuestras Redes
+          </h5>     
+          <a target="blank" href='https://www.facebook.com/empow.capitals'>
             <FontAwesomeIcon
                 icon={['fab', 'facebook']}
-                className='h2 mr-4'
+                className='h1 mr-4'
                 style={{ color: 'blue' }}
               />
+          </a>
+            
               <a  target="blank" href="https://chat.whatsapp.com/KFGlQDJjW4DE2sjW5JrCt8">
             <FontAwesomeIcon
                 icon={['fab', 'whatsapp']}
-                className='h2 mr-4'
+                className='h1 mr-4'
                 style={{ color: 'green' }}
               />
               </a>
+              <a target="blank" href='https://www.youtube.com/channel/UC1tjV2Ox6zEe4DLtpnkTTaQ?view_as=subscriber'>
             <FontAwesomeIcon
-                icon={['fab', 'twitter']}
-                className='h2 mr-4'
-                style={{ color: 'DodgerBlue' }}
+                icon={['fab', 'youtube']}
+                className='h1 mr-4'
+                style={{ color: 'red' }}
               />
+              </a>
               <a target="blank" href="https://instagram.com/empowcapitals" >
                  <FontAwesomeIcon
                 icon={['fab', 'instagram']}
-                className='h2'
+                className='h1 mr-4'
                 style={{ color: '#e83e8c' }}
               />
               </a>
