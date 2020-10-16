@@ -4,31 +4,38 @@ import empow from '../logos/Empow-01.jpeg'
 
 export default function navBar(){
     return (
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" text="dark" style={{lineHeight:"50px"}} >
-          <Navbar.Brand href="#home">
-            <img src={empow} alt="logoempow" height="130px" width="200px" />
+      <div className='nav'>
+      <Navbar collapseOnSelect expand="lg" >
+        <div>
+           <Navbar.Brand href="#home">
+            <img src={empow} alt="logoempow" height="100px" width="160px" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        </div>
+          
+          
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <div>
 
-          <Navbar.Collapse className="justify-content-center" id="responsive-navbar-nav">
+         
+          <Navbar.Collapse className="justify-content-left" id="responsive-navbar-nav">
             <Nav >
               <NavDropdown title="SEÑALES" id="collasible-nav-dropdown">          
                 <NavDropdown.Item href="https://chat.whatsapp.com/KFGlQDJjW4DE2sjW5JrCt8"> SEÑALES GRATIS</NavDropdown.Item>
                   <NavDropdown.Divider /> 
-                <NavDropdown.Item href="#señales-premium">SEÑALES PREMIUM</NavDropdown.Item>
+                <NavDropdown.Item href="#premium">SEÑALES PREMIUM</NavDropdown.Item>
               </NavDropdown>  
-              <Nav.Link href="#gestion-de-capital">GESTIÓN DE CAPITAL</Nav.Link>
-              <NavDropdown title="CURSOS" href="#cursos" id="collasible-nav-dropdown">          
-                <NavDropdown.Item href="#analisis-tecnico"> ANÁLISIS TÉCNICO</NavDropdown.Item>
+              <Nav.Link href="#gestion-de-capital">GESTIÓN DE CAPITAL</Nav.Link>              
+              <NavDropdown title="CURSOS" id="collasible-nav-dropdown">          
+              <NavDropdown.Item href="#analisis-tecnico">ANÁLISIS TÉCNICO</NavDropdown.Item>
                 <NavDropdown.Item href="#ondas-de-elliott">ONDAS DE ELLIOTT</NavDropdown.Item>
                 <NavDropdown.Item href="#patrones-armonicos">PATRONES ARMÓNICOS</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#mentoria">MENTORIA 1-1</Nav.Link>
               <Nav.Link href="#preguntas">CONTACTO</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">REDES SOCIALES</Nav.Link> 
+              <Nav.Link eventKey={2} href="#social">REDES SOCIALES</Nav.Link> 
             </Nav>
-          </Navbar.Collapse> 
-      </Navbar>
-        
+          </Navbar.Collapse> </div>
+      </Navbar> 
+        </div>
     )
 }
