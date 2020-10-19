@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer(){
   return (
-    <footer id='social' className='row p-5  mx-0 table-responsive' 
+    <footer id='social' className='row p-4  mx-0 table-responsive' 
     style={{position: 'relative', bottom: 0 }} >
         <div className='text-light text-center' >
           <h5 className='text-uppercase font-weight-dark text-dark mb-3'>

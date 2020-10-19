@@ -1,14 +1,13 @@
 import React from 'react'
-import { Card, Button, Container} from 'react-bootstrap'
+import { Card, Button} from 'react-bootstrap'
 import Video from './video'
 import Widget from './Widget'
+import NavBar from './NavBar'
 import './style.css'
 
 export default function content(){
     // const colorBut = { backgroundColor: 'rgba(163, 24, 0, 0.829)' }
-    const cards = {width: '18rem', height: '17rem' , marginRight:'15px'}
-    const conteiner = { display:'flex', flexDirection: 'row', margin: '20px'}
-
+   
     let pack = [
                 {name: 'Paquete de 1 mes', price:'U$S 29,00'},
                 {name: 'Paquete de 3 meses', price:'U$S 59,00'},
@@ -17,17 +16,18 @@ export default function content(){
             ]
 
     return (
-        <div >
-            
+        <div className='contenedor' >
+            <NavBar />
+            <Widget/>
             <Video/> 
                        
-            <section id='premium' className='señal' >
+            <section id='premium' className='section' >
                 <h3>Señales Premium</h3><hr/>
-                <div  style={conteiner}>                    
+                <div  className='señales'>                    
                     { pack && pack.map(p => (
-                           <div className='trans'>
-                          <Card key={p.name} className='card text-center' bg="light" style={cards} >
-                            <Card.Header> <h4 className='cardpaq'>{p.name} </h4> </Card.Header>
+                           <div className='cards'>
+                          <Card key={p.name} className='card text-center' bg="light" >
+                            <Card.Header as='h4'> {p.name} </Card.Header>
                             <Card.Body>                        
                                 <Card.Text><p> 3-5 señales por día <br/>
                                      Acceso instantaneo al servicio premium</p>                                
@@ -41,11 +41,9 @@ export default function content(){
                 </div>    
             </section>
             
-            <Widget/>
-
             <section id='gestion-de-capital' className='section'>
-                <div className='bcg' >
-                <div className='datos'>
+                <div className='fondoGC' >
+                <div className='datosGC'>
                     <Card.Body>  
                         <h3>Gestión de Capital</h3><hr/>
                     <Card.Text>
@@ -53,9 +51,9 @@ export default function content(){
                         <li>Inversion mínima u$s2.000,00</li>
                         <li>Drawdown: Máximo 10%</li>
                         <li>Rentabilidad hasta 10% anual</li>
-                    </Card.Text>                    
+                    </Card.Text>  
+                    <Button variant='danger' size="sm">Consultar</Button>                  
                 </Card.Body>
-                <Button variant='danger' size="sm">Consultar</Button>
                 </div>
                 </div>
             </section>
@@ -89,15 +87,15 @@ export default function content(){
                         <h4>Ondas de Elliot</h4><hr/>
                         <p>En este curso intensivo aprenderas el correcto conteo de las ondas en los mercados</p>  
                         <Card.Text>
-                            <li>Clases en vivo</li>
-                            <li>Teoría de Elliot.</li>
-                            <li>Tiempo-Patrón-Coeficiente.</li>
                             <li>Figuras.</li>
-                            <li>Como iniciar un Conteo de Ondas.</li>
-                            <li>Gestión Operativa para Ondas</li>
-                            <li>Gestión de Riesgo.</li>
+                            <li>Clases en vivo.</li>
+                            <li>Teoría de Elliot.</li>   
                             <li>Cuenta Auditada.</li>
+                            <li>Gestión de Riesgo.</li>
                             <li>Seguimiento Extra.</li>
+                            <li>Tiempo-Patrón-Coeficiente.</li>
+                            <li>Gestión Operativa para Ondas.</li>
+                            <li>Como iniciar un Conteo de Ondas.</li>
                             <li>Mentoria 1-1 para pulir errores.</li>
                         </Card.Text>
                         <h5> U$S 129,00</h5>  
@@ -114,11 +112,11 @@ export default function content(){
                         <br/>En el curso daremos desde conceptos básicos hasta la operativa avanzada.
                         <br/> Trabajaremos con una estrategia altamente efectiva y foco en la buena gestión + psicología. 
                         </p>  
-                        <Card.Text>
-                            <li>Clases en vivo 3 a 4 veces por semana.</li>
+                        <Card.Text>                            
                             <li>Canal de señales premium.</li>
                             <li>Comunidad de WhatsApp.</li>
-                            <li>PDF y libros de estudio.</li>             
+                            <li>PDF y libros de estudio.</li>
+                            <li>Clases en vivo 3 a 4 veces por semana.</li>           
                             <li>Creación y Seguimiento de cuenta Auditada.</li>                
                         </Card.Text>
                         <h5 > U$S 129,00</h5>   
@@ -143,9 +141,9 @@ export default function content(){
                         trader se sienta seguro a la hora de realizar sus operativas.
                     </p>   
                     <Card.Text>
-                        <li>Mentoría para cualquier mercado que opere el trader</li>
-                        <li>Duración: 1 mes</li>
+                        <li>Duración: 1 mes</li>                    
                         <li>Acceso al canal de señales premium</li>
+                        <li>Mentoría para cualquier mercado que opere el trader</li> 
                     </Card.Text>
                     <Button variant='danger' size="sm" >Solicitar</Button>
                 </Card.Body>

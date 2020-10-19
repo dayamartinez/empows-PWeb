@@ -1,3 +1,5 @@
 [1008/021906.400:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
 [1012/193306.922:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [1014/212556.486:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1018/211216.414:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Dayamar\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\720579a4-ecea-4d33-a731-84c599134b84: El sistema no puede encontrar la ruta especificada. (0x3)
+[1018/211216.484:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
