@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function widget(){
     return (
-      <div>        
+      <div  className='widget'>        
         <div key="widget-container" className="tradingview-widget-container">
           <div key="widget-container" className="tradingview-widget-container__widget"></div>
           <iframe title="tradingview-widget" scrolling="no" allowtransparency="true" border="0"

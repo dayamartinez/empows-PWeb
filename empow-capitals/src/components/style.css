@@ -1,44 +1,37 @@
-.section {
-    display: block;
-    position: relative;
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section {   
     z-index: 1;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 5vw;
-       
+    margin-top: 5vw;      
+}
+.widget{
+  margin-top: 130px; 
 }
 /* video youtube */
-.video {
-    display: block;
-    position: relative;
+.video {    
     overflow: hidden;
-    width: 100%;
-    height: 20vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 10vw;
-    margin-bottom: 5vw;
+    width: 40%;
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 25px;
 }
-.bgvideo {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    width: 35%;
-    background: #fff;    
-}
-.slide {
+.bgvideo { 
     display: flex;
     justify-content: center;
-    position: relative;
+    width: 100%;   
     overflow: hidden;
-    width: 100%;
-    height: 30vw;
-    background: #fff;
+    background: #fff;    
 }
+
 /* ------- */
 
-.bcg {
+.fondoGC {
     position: relative;
     display: block;
     width: 100%;
@@ -49,7 +42,7 @@
     background-position: center;
     background-attachment: fixed;
 }
-.datos {
+.datosGC {
     display: block;
     position: absolute;
     top: 4vw;
@@ -62,25 +55,20 @@
     color: rgba(139, 16, 16, 0.829)
 }
 
-.señal {
-    display: block;
-    position: relative;
+.señales {
+    display:flex;
+    flex-direction: row;
     z-index: 1;
     width: 100%;
     overflow: hidden;
-    padding: 50px;     
+    padding: 30px;
+    box-sizing: border-box;       
 }
-/* .trans {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 2vw;
-    -webkit-transform: translateY(500px);
-    transform: translateY(500px);
-    opacity: 0;
-    transition: .5s .5s;
-} */
+.cards {   
+    width: 25%; 
+    height: 250px; 
+    margin-right:15px;
+}
 /* navbar */
 .nav {
     display: inline;
@@ -91,21 +79,14 @@
     color: black;
 }
 
-@media (max-width: 500px) {
-    .cardspaq{
-        display: flex;
-        flex-direction: row;
-    }
-  }
-
-  .fondomentoria {
+.fondomentoria {
     position: relative;
     display: block;
     width: 100%;
     background-image: url('../logos/mentorias.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vw;
+    height: 40vw;
     background-position: center;
     background-attachment: fixed;
 }
@@ -118,3 +99,114 @@
     background-color: rgba(221, 208, 208, 0.733);
     
 }
+    /* ----media screen 1000px--------- */
+  @media screen and (max-width: 1000px) {
+     .section{
+        width: 100%;
+        
+    }   
+   .fondomentoria{
+    background-image: none;
+    height: 500px
+    }
+    .datosmentoria{ 
+    width: 100%;
+    overflow: hidden;     
+    }
+    .fondoGC{
+    height: 350px;
+    width: 100%;
+    height: 38vw;       
+    }
+  }
+/* -------MEDIA SCREEN 800----------- */
+@media screen and (max-width: 800px) { 
+    .section{
+        width: 100%;
+    }
+    .señales{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+       width: 85%;    
+    }
+     .fondomentoria{
+    background-image: none;
+    height: 500px
+    }
+    .datosmentoria{ 
+    width: 100%;
+    overflow: hidden;     
+    }
+    .fondoGC{
+    background-image: none;
+    height: 300px;
+    width: 100%;       
+    }
+    .datosGC{   
+    width: 100%;   
+    background-color: white;
+    }
+     .video {    
+    overflow: hidden;
+    width: 90%;
+    }
+  }
+
+/* ----media screen 500px--------- */
+@media screen and (max-width: 500px) {
+    .section{
+        width: 100%;
+    }
+    .señales{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+       width: 100%;
+            
+    }
+    .fondomentoria{
+    height: 700px
+    }
+    .datosmentoria{ 
+     z-index: 1;
+    width: 100%;
+    overflow: hidden;         
+    }
+    .fondoGC{
+    background-image: none;
+    height: 280px;
+    width: 100%;   
+            
+    }
+    .datosGC{
+    z-index: 1;
+    width: 100%;
+    overflow: hidden; 
+    }
+    .video {    
+    overflow: hidden;
+    width: 90%;
+    height: 180px 
+    }
+  }
+   /* ----media screen 300px--------- */
+  @media screen and (max-width: 300px) {
+  
+    .fondomentoria{
+    height: 750px
+    }
+
+    .fondoGC{
+    background-image: none;
+    height: 360px;
+    width: 100%;   
+            
+    }
+  }
+ 
+   

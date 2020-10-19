@@ -1,6 +1,5 @@
 import React from 'react'
 // import { Route } from 'react-router-dom'
-import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Content from './components/Content'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -13,10 +12,8 @@ library.add(fab, faCheckSquare, faCoffee, fas)
 function App() {
   return (
     <div className='App h-100'>
-      <NavBar />
       <Content />
-      <Footer />
-   
+      <Footer />   
     </div>
   );
 }
