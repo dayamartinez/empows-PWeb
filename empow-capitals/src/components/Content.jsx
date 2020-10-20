@@ -7,7 +7,7 @@ import './style.css'
 
 export default function content(){
     // const colorBut = { backgroundColor: 'rgba(163, 24, 0, 0.829)' }
-   
+
     let pack = [
                 {name: 'Paquete de 1 mes', price:'U$S 29,00'},
                 {name: 'Paquete de 3 meses', price:'U$S 59,00'},
@@ -33,7 +33,7 @@ export default function content(){
                                      Acceso instantaneo al servicio premium</p>                                
                                     <h5 className='cardpaq'> {p.price}</h5>                                
                                 </Card.Text>
-                                <Button variant='danger'size="sm" block>Solicitar Compra</Button>
+                                <Button variant='danger'size="sm"  href="https://wa.me/message/Y44OPABP27DTD1" block>Solicitar Compra</Button>
                             </Card.Body>
                         </Card>
                        </div>
@@ -52,7 +52,9 @@ export default function content(){
                         <li>Drawdown: Máximo 10%</li>
                         <li>Rentabilidad hasta 10% anual</li>
                     </Card.Text>  
-                    <Button variant='danger' size="sm">Consultar</Button>                  
+                    <Button variant='danger' size="sm" href="https://wa.me/message/Y44OPABP27DTD1">
+                    Solicitar
+                    </Button>                  
                 </Card.Body>
                 </div>
                 </div>
@@ -76,7 +78,7 @@ export default function content(){
                             <li>Clases en vivo + Canal Premium.</li>                     
                         </Card.Text>
                         <h5> U$S 129,00</h5>
-                        <Button variant='danger' size="sm">Solicitar Compra</Button>
+                        <Button variant='danger' size="sm" href="https://wa.me/message/Y44OPABP27DTD1">Solicitar Compra</Button>
                         </Card.Body> 
                     </div>           
                 </section>
@@ -99,7 +101,7 @@ export default function content(){
                             <li>Mentoria 1-1 para pulir errores.</li>
                         </Card.Text>
                         <h5> U$S 129,00</h5>  
-                        <Button variant='danger' size="sm">Solicitar Compra</Button>
+                        <Button variant='danger' size="sm"  href="https://wa.me/message/Y44OPABP27DTD1">Solicitar Compra</Button>
                         </Card.Body>
                     </div>           
                 </section>
@@ -120,7 +122,7 @@ export default function content(){
                             <li>Creación y Seguimiento de cuenta Auditada.</li>                
                         </Card.Text>
                         <h5 > U$S 129,00</h5>   
-                        <Button variant='danger' size="sm">Solicitar Compra</Button>
+                        <Button variant='danger' size="sm"  href="https://wa.me/message/Y44OPABP27DTD1">Solicitar Compra</Button>
                     </Card.Body> 
                     </div>           
                 </section>
@@ -145,7 +147,7 @@ export default function content(){
                         <li>Acceso al canal de señales premium</li>
                         <li>Mentoría para cualquier mercado que opere el trader</li> 
                     </Card.Text>
-                    <Button variant='danger' size="sm" >Solicitar</Button>
+                    <Button variant='danger' size="sm"  href="https://wa.me/message/Y44OPABP27DTD1">Solicitar</Button>
                 </Card.Body>
                 </div>
                 </div>         
