@@ -7,8 +7,7 @@
 .section {   
     z-index: 1;
     width: 100%;
-    overflow: hidden;
-    margin-top: 5vw;      
+    overflow: hidden;     
 }
 .widget{
   margin-top: 130px; 
@@ -25,8 +24,7 @@
     display: flex;
     justify-content: center;
     width: 100%;   
-    overflow: hidden;
-    background: #fff;    
+    overflow: hidden;   
 }
 
 /* ------- */
@@ -65,9 +63,10 @@
     box-sizing: border-box;       
 }
 .cards {   
+    margin: 0 15px;
     width: 25%; 
     height: 250px; 
-    margin-right:15px;
+ 
 }
 /* navbar */
 .nav {
@@ -86,7 +85,7 @@
     background-image: url('../logos/mentorias.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vw;
+    height: 35vw;
     background-position: center;
     background-attachment: fixed;
 }
@@ -99,6 +98,7 @@
     background-color: rgba(221, 208, 208, 0.733);
     
 }
+
     /* ----media screen 1000px--------- */
   @media screen and (max-width: 1000px) {
      .section{
@@ -128,6 +128,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+       
     }
     .cards{
        width: 85%;    
@@ -152,6 +153,7 @@
      .video {    
     overflow: hidden;
     width: 90%;
+   
     }
   }
 
@@ -163,11 +165,11 @@
     .señales{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
     }
     .cards{
        width: 100%;
-            
+       margin: 8px;     
     }
     .fondomentoria{
     height: 700px
@@ -191,7 +193,7 @@
     .video {    
     overflow: hidden;
     width: 90%;
-    height: 180px 
+    height: 180px;
     }
   }
    /* ----media screen 300px--------- */
@@ -210,3 +212,21 @@
   }
  
    
+  .service {
+    background: url(https://st4.depositphotos.com/4376739/28438/v/1600/depositphotos_284389388-stock-illustration-stock-market-graph-or-forex.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
