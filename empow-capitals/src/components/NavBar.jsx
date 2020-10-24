@@ -17,7 +17,7 @@ export default function navBar(){
           <div>
 
          
-          <Navbar.Collapse className="justify-content-left" id="responsive-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav >
               <NavDropdown title="SEÑALES" id="collasible-nav-dropdown">          
                 <NavDropdown.Item href="https://chat.whatsapp.com/KFGlQDJjW4DE2sjW5JrCt8"> SEÑALES GRATIS</NavDropdown.Item>
@@ -25,13 +25,9 @@ export default function navBar(){
                 <NavDropdown.Item href="#premium">SEÑALES PREMIUM</NavDropdown.Item>
               </NavDropdown>  
               <Nav.Link href="#gestion-de-capital">GESTIÓN DE CAPITAL</Nav.Link>              
-              <NavDropdown title="CURSOS" id="collasible-nav-dropdown">          
-              <NavDropdown.Item href="#analisis-tecnico">ANÁLISIS TÉCNICO</NavDropdown.Item>
-                <NavDropdown.Item href="#ondas-de-elliott">ONDAS DE ELLIOTT</NavDropdown.Item>
-                <NavDropdown.Item href="#patrones-armonicos">PATRONES ARMÓNICOS</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#cursos">CURSOS</Nav.Link>   
               <Nav.Link href="#mentoria">MENTORIA 1-1</Nav.Link>
-              <Nav.Link href="#preguntas">CONTACTO</Nav.Link>
+              <Nav.Link href="#contacto">CONTACTO</Nav.Link>
               <Nav.Link eventKey={2} href="#social">REDES SOCIALES</Nav.Link> 
             </Nav>
           </Navbar.Collapse> </div>
