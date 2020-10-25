@@ -16,4 +16,3 @@ export default function video(){
     
     )
 }
-//<iframe  src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> data-gtm-yt-inspected-1_25="true">

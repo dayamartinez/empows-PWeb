@@ -3,7 +3,7 @@ import { Card, Button} from 'react-bootstrap'
 import Video from './video'
 import Widget from './Widget'
 import NavBar from './NavBar'
-import Contact from './Contact'
+
 import './style.css'
 
 export default function content(){
@@ -65,7 +65,7 @@ export default function content(){
             </section>
            
             <section className='section mt-5'id='cursos'> 
-                    <h3 className='text-center'> Cursos</h3><hr/>
+                    <h3 className='text-center'> Cursos<hr/></h3>
                 <div className='señales'>                     
                     <div className='section mb-4 mr-5'>
                         <Card className='card bg-white' >
@@ -165,9 +165,7 @@ export default function content(){
                 </Card.Body>
                 </div>
                 </div>         
-            </section>  
-
-           <Contact/>                     
+            </section>                     
         </div>
     )
 }

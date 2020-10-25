@@ -10,15 +10,15 @@
     overflow: hidden;     
 }
 .widget{
-  margin-top: 130px; 
+  margin-top: 6rem; 
 }
 /* video youtube */
 .video {    
     overflow: hidden;
-    width: 40%;
-    height: 300px;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    width: 50%;
+    height: 20rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 .bgvideo { 
     display: flex;
@@ -27,7 +27,7 @@
     overflow: hidden;   
 }
 .service {
-    background: url(https://st4.depositphotos.com/4376739/28438/v/1600/depositphotos_284389388-stock-illustration-stock-market-graph-or-forex.jpg) no-repeat 0px 0px;
+    background: url('../logos/fondoseñalesvideo.jpg') no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -43,27 +43,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-/* ------- */
-
-.fondoGC {
-    position: relative;
-    display: block;
-    width: 100%;
-    background-image: url('../logos/gestioncapital.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30vw;
-    background-position: center;
-    background-attachment: fixed;
-}
-.datosGC {
-    display: block;
-    position: absolute;
-    top: 4vw;
-    width: 100%;
-    padding: 3vw 4vw;
-    background-color: rgba(221, 208, 208, 0.733) ;
-}
 
 /* CARD PAQUETES */
 .cardpaq{
@@ -76,25 +55,42 @@
     z-index: 1;
     width: 100%;
     overflow: hidden;
-    padding: 30px;
-    box-sizing: border-box;       
+    padding: 2rem;
+    box-sizing: border-box; 
+        
 }
 .cards {   
     margin: 0 15px;
     width: 25%; 
-    height: 250px; 
- 
+    height: 17rem; 
 }
 /* navbar */
 .nav {
-    display: inline;
     position: fixed;  
     z-index: 100;
     background-color: white; 
-    width: 100%; 
-    color: black;
+    width: 100%;
 }
-
+/* fondos */
+.fondoGC {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-image: url('../logos/gestioncapital.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22rem;
+    background-position: center;
+    background-attachment: fixed;
+}
+.datosGC {
+    display: block;
+    position: absolute;
+    top: 3vw;
+    width: 100%;
+    padding: 1vw 5vw;
+    background-color: rgba(221, 208, 208, 0.733) ;
+}
 .fondomentoria {
     position: relative;
     display: block;
@@ -102,64 +98,56 @@
     background-image: url('../logos/mentorias.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vw;
+    height: 30rem;
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 3rem;
 }
 .datosmentoria {
     display: block;
     position: absolute;
-    top: 5vw;
+    top: 3vw;
     width: 100%;
-    padding: 1vw 4vw;
+    padding: 1vw 5vw;
     background-color: rgba(221, 208, 208, 0.733);
     
 }
 
     /* ----media screen 1000px--------- */
-  @media screen and (max-width: 1000px) {
-     .section{
+@media screen and (max-width: 1000px) {
+    .section {
         width: 100%;
-        
-    }   
-   .fondomentoria{
-    background-image: none;
-    height: 500px
-    }
-    .datosmentoria{ 
-    width: 100%;
-    overflow: hidden;     
+    }     
+    .cards {
+        width: 85%;    
+     }
+    .service{
+        background: none;
     }
     .fondoGC{
     height: 350px;
     width: 100%;
     height: 38vw;       
     }
+    .video {    
+        overflow: hidden;
+        width: 90%;
+    }
   }
-/* -------MEDIA SCREEN 800----------- */
-@media screen and (max-width: 800px) { 
-    .section{
-        width: 100%;
-    }
-    .señales{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-       
-    }
-    .service{
-        background: none;
-    }
-    .cards{
-       width: 85%;    
-    }
+/* -------MEDIA SCREEN 890----------- */
+@media screen and (max-width: 890px) {  
      .fondomentoria{
+    background-image: none;
+    height: 500px
+    } 
+      .fondomentoria{
     background-image: none;
     height: 500px
     }
     .datosmentoria{ 
     width: 100%;
-    overflow: hidden;     
+    overflow: hidden;
+    background-color: white     
     }
     .fondoGC{
     background-image: none;
@@ -167,26 +155,25 @@
     width: 100%;       
     }
     .datosGC{   
-    width: 100%;   
-    background-color: white;
-    }
-     .video {    
-    overflow: hidden;
-    width: 90%;
-   
-    }
-  }
-
-/* ----media screen 500px--------- */
-@media screen and (max-width: 500px) {
-    .section{
-        width: 100%;
+    width: 100%;
+    background-color: white
+    
     }
     .señales{
         width: 100%;
         display: flex;
         flex-direction: column;        
     }
+    .footerMob{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;        
+    }
+  }
+
+/* ----media screen 500px--------- */
+@media screen and (max-width: 500px) {
     .cards{
        width: 100%;
        margin: 8px;     
@@ -202,8 +189,7 @@
     .fondoGC{
     background-image: none;
     height: 280px;
-    width: 100%;   
-            
+    width: 100%;          
     }
     .datosGC{
     z-index: 1;
@@ -217,17 +203,14 @@
     }
   }
    /* ----media screen 300px--------- */
-  @media screen and (max-width: 300px) {
-  
+  @media screen and (max-width: 300px) {  
     .fondomentoria{
     height: 750px
     }
-
     .fondoGC{
     background-image: none;
     height: 360px;
-    width: 100%;   
-            
+    width: 100%;            
     }
   }
  
