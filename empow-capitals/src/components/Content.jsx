@@ -56,7 +56,7 @@ export default function content(){
                         <li>Drawdown: Máximo 10%</li>
                         <li>Rentabilidad hasta 10% anual</li>
                     </Card.Text>  
-                    <Button variant='danger' size="sm" href="https://wa.me/message/Y44OPABP27DTD1">
+                    <Button variant='light' className='mt-2' size="sm" href="https://wa.me/message/Y44OPABP27DTD1">
                     Solicitar
                     </Button>                  
                 </Card.Body>
@@ -161,7 +161,7 @@ export default function content(){
                         <li>Acceso al canal de señales premium</li>
                         <li>Mentoría para cualquier mercado que opere el trader</li> 
                     </Card.Text>
-                    <Button variant='danger' size="sm"  href="https://wa.me/message/Y44OPABP27DTD1">Solicitar</Button>
+                    <Button variant='light' className='mt-2' size="sm"  href="https://wa.me/message/Y44OPABP27DTD1">Solicitar</Button>
                 </Card.Body>
                 </div>
                 </div>         
