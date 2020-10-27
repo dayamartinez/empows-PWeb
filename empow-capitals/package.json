@@ -1,7 +1,7 @@
 {
   "name": "empow-capitals",
   "version": "0.1.0",
-  "homepage": "http://empowcapitals.com",
+  "homepage": "http://empowcapitals.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
