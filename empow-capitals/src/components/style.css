@@ -64,13 +64,7 @@
     width: 25%; 
     height: 17rem; 
 }
-/* navbar */
-.nav {
-    position: fixed;  
-    z-index: 100;
-    background-color: white; 
-    width: 100%;
-}
+
 /* fondos */
 .fondoGC {
     position: relative;
@@ -147,7 +141,9 @@
     .datosmentoria{ 
     width: 100%;
     overflow: hidden;
-    background-color: white     
+    background-color: rgba(192, 31, 31, 0.89);
+    color: white
+      
     }
     .fondoGC{
     background-image: none;
@@ -156,7 +152,8 @@
     }
     .datosGC{   
     width: 100%;
-    background-color: white
+    background-color: rgba(192, 31, 31, 0.89);
+    color: white
     
     }
     .señales{
@@ -214,6 +211,3 @@
     }
   }
  
-   
-  
-

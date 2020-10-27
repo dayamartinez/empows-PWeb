@@ -4,10 +4,10 @@ import empow from '../logos/Empow-01.jpeg'
 
 export default function navBar(){
     return (
-      <div className='nav justify-content-center'>
+      <div className='fixed-top bg-white'>
       <Navbar collapseOnSelect expand="lg" >
         
-          <Navbar.Brand href="#home">
+          <Navbar.Brand className='mr-5' href="#home">
           <img src={empow} alt="logoempow" height="83px" width="145px" />
           </Navbar.Brand>
          
@@ -15,7 +15,7 @@ export default function navBar(){
 
           <Navbar.Collapse  id="responsive-navbar-nav">
             <Nav >
-              <NavDropdown title="SEÑALES" id="collasible-nav-dropdown">          
+              <NavDropdown  title="SEÑALES" id="collasible-nav-dropdown">          
                 <NavDropdown.Item href="https://chat.whatsapp.com/KFGlQDJjW4DE2sjW5JrCt8"> SEÑALES GRATIS</NavDropdown.Item>
                   <NavDropdown.Divider /> 
                 <NavDropdown.Item href="#premium">SEÑALES PREMIUM</NavDropdown.Item>
