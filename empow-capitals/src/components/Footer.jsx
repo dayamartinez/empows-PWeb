@@ -57,14 +57,14 @@ export default function Footer(){
 
       <div className='col-md-3 text-center m-2'>
       <div className='align-self-center m-2'>
-      <a href="mailto:Empowcapitals@hotmail.com"><FontAwesomeIcon
+      <a href="mailto:contacto@empowcapitals.com"><FontAwesomeIcon
           icon={['fa', 'envelope']}
           className='h2 m-2'
           style={{ color: 'DodgerBlue' }}
         /></a>
       </div>
       <div className=' text-center'>
-       <p><a href="mailto:Empowcapitals@hotmail.com">Empowcapitals@hotmail.com</a></p>
+       <p><a href="mailto:contacto@empowcapitals.com">contacto@empowcapitals.com</a></p>
       </div>
     </div>
     

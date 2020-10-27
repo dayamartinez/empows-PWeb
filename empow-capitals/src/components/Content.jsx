@@ -72,7 +72,7 @@ export default function content(){
                             <Card.Body>
                                 <h4> Análisis Técnico</h4> <hr/>                       
                                 <Card.Text>
-                                    <p>En este curso intensivo recibiras todo lo necesario paralograr un completo análisis del Mercado Bursátil 
+                                    <p>En este curso intensivo recibiras todo lo necesario para lograr un completo análisis del Mercado Bursátil 
                                         (aplica para cualquier gráfico financiero).</p>
                                     <ul>                                
                                         <li>Análisis Técnico.</li>
